@@ -1,0 +1,78 @@
+.home {
+  background: url("Ration_Shop.jpg") no-repeat center center/cover;
+  height: 110vh;
+  text-align: center;
+}
+
+.home-content {
+  display: flex;
+  background-color: rgba(5, 98, 197, 0.85);
+  color: white;
+  height: 110vh;
+  width: 100%;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.home-header {
+  margin: 12px;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.home-para {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.home-btn {
+  color: #3e85c7;
+  padding: 8px 25px;
+}
+
+.search {
+  height: 300px;
+  text-align: center;
+  background-color: rgb(240, 239, 239);
+  padding: 20px;
+}
+
+.search-innerdiv {
+  margin: 25px 0px;
+}
+
+.search-header {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-div {
+  padding: 20px;
+  text-align: center;
+}
+
+.input-class {
+  width: 40vw;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.resp-authorities {
+  padding: 50px;
+}
+
+@media screen and (max-width: 888px) {
+  .grid {
+    flex-direction: column;
+  }
+}

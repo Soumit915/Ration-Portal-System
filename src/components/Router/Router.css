@@ -1,0 +1,97 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px;
+  width: 100vw;
+  background: transparent;
+  align-items: center;
+}
+
+.nav-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px;
+  width: 100vw;
+  background-color: white;
+  box-shadow: 1px 0px 10px 1px rgb(228, 226, 226);
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-options {
+  padding: 0px 30px;
+}
+
+.style-navlinks {
+  padding: 14px 14px;
+  border-radius: 10%;
+  font-weight: 400;
+  color: #007bff;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-navlinks:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+}
+
+.style-navlinks-scroll {
+  padding: 14px 14px;
+  border-radius: 10%;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-navlinks-scroll:hover {
+  text-decoration: none;
+  color: #007bff;
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-logo-scroll {
+  padding: 6px 6px;
+  font-size: 160%;
+  font-weight: 650;
+  color: white;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-logo-scroll:hover {
+  text-decoration: none;
+  color: #f0eaeaab;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-logo {
+  padding: 6px 6px;
+  font-size: 160%;
+  font-weight: 650;
+  color: #007bff;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-logo:hover {
+  text-decoration: none;
+  color: #66abf5cc;
+}
+
+.trademark{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,104 @@
+.designPerson {
+  display: inline-block;
+  background-color: #eeeeee;
+  width: 385px;
+  height: 335px;
+  padding: 35px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 7px;
+  transition: all 0.3s linear;
+}
+
+.designPerson:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.designimg {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.designName{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+.designRole{
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+.designContact{
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 1088px) {
+  .designPerson {
+    width: 30%;
+    margin: 20px auto;
+  }
+
+  .designimg {
+    width: 35%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+  }
+  
+  .designName{
+    font-size: 120%;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+  
+  .designRole{
+    font-size: 100%;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+  
+  .designContact{
+    font-size: 100%;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .designPerson {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .designimg {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+  }
+  
+  .designName{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+  
+  .designRole{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+  
+  .designContact{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+}

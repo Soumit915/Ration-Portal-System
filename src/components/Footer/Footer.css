@@ -1,0 +1,13 @@
+footer {
+  color: white;
+  background-color: black;
+  height: 90px;
+}
+
+footer p {
+  text-align: center;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+  padding: 35px;
+}
