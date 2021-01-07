@@ -3,12 +3,17 @@ import './Router.css';
 import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import Home from '../Home/Home';
 import Aboutus from '../About/AboutUs';
+import Login from "../Login/Login";
+import LoginForm from "../LoginForm/LoginForm";
 
 class Navbar extends React.Component {
 
     constructor() {
         super();
-        this.state = { makeNavTransparent: true };
+        this.state = {
+            makeNavTransparent: true,
+            loginType: ""
+        };
     }
 
     componentDidMount() {
@@ -56,9 +61,13 @@ class Navbar extends React.Component {
         }
     }
 
-    onAboutUsClick = (e) => {
+    onAboutUsClick = () => {
         if (this.state.makeNavTransparent)
             this.setState({ makeNavTransparent: false });
+    }
+
+    onLoginClick = (loginType) => {
+        this.setState({loginType: loginType});
     }
 
     render() {
@@ -138,10 +147,21 @@ class Navbar extends React.Component {
                                             onAboutUsClick={this.onAboutUsClick}
                                         />
                                     </Route>
-                                    <Route path="/about-us"><Aboutus item={"about-us"} /></Route>
-                                    <Route path="/our-report"><Homed item={"our-report"} /></Route>
-                                    <Route path="/contact-us"><Homed item={"contact-us"} /></Route>
-                                    <Route path="/login"><Homed item={"log-in"} /></Route>
+                                    <Route path="/about-us">
+                                        <Aboutus item={"about-us"} />
+                                    </Route>
+                                    <Route path="/our-report">
+                                        <Homed item={"our-report"} />
+                                    </Route>
+                                    <Route path="/contact-us">
+                                        <Homed item={"contact-us"} />
+                                    </Route>
+                                    <Route path="/login">
+                                        <Login onLoginClick={this.onLoginClick} />
+                                    </Route>
+                                    <Route path="/login-form">
+                                        <LoginForm loginType={this.state.loginType} />
+                                    </Route>
                                     <Route path="/*"><Homed /></Route>
                                 </Switch>
                             </div>

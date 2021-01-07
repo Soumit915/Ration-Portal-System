@@ -1,0 +1,138 @@
+.designCursor-pointer:hover {
+  cursor: pointer;
+  /*background-color: #007bff;*/
+  background: linear-gradient(to top right, #007bff, #248eff, #61abfb);
+  box-shadow: 5px 10px 15px rgba(3, 89, 180, 0.959);
+  color: white;
+}
+
+.designAvatar {
+  width: 40%;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  transform: translate(0%, 0%);
+  transition: 0.4s all ease-in-out;
+}
+
+.designAvatarHover {
+  width: 41%;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  transform: translate(0%, 0%);
+  transition: 0.4s all ease-in-out;
+}
+
+.avatar-border-white {
+  border: 1px solid white;
+}
+
+.designType {
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+.designTypeHover {
+  padding: 0 5px;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 10px auto;
+}
+
+.designInstruction {
+  padding: 0 5px;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+.designInstructionHover {
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 1088px) {
+  .designAvatar {
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    transform: translate(0%, 0%);
+    transition: 0.4s all ease-in-out;
+  }
+
+  .designAvatarHover {
+    width: 42%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transform: translate(0%, 0%);
+    transition: 0.4s all ease-in-out;
+  }
+
+  .designType {
+    font-size: 120%;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+
+  .designTypeHover {
+    font-size: 121%;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+
+  .designInstruction {
+    font-size: 100%;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+
+  .designInstructionHover {
+    font-size: 101%;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  .designAvatar {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+  }
+
+  .designAvatarHover {
+    width: 103px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+
+  .designType {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+
+  .designTypeHover {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px auto;
+  }
+
+  .designInstruction {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+
+  .designInstructionHover {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 10px auto;
+  }
+}

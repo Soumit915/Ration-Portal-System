@@ -1,13 +1,16 @@
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   color: white;
   background-color: black;
-  height: 90px;
+  height: 75px;
 }
 
 footer p {
   text-align: center;
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  line-height: 20px;
-  padding: 35px;
+  line-height: 15px;
+  padding: 30px;
 }

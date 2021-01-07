@@ -8,8 +8,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <Router />
+        <div className="page-container">
+          <div className="content-wrap">
+            <Router />
+          </div>
           <Footer />
         </div>
       </>
