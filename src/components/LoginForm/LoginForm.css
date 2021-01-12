@@ -12,7 +12,7 @@
 	z-index: -1;
 }
 
-.container{
+.loginform-container{
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -176,9 +176,8 @@ a:hover{
 	background-position: right;
 }
 
-
 @media screen and (max-width: 1050px){
-	.container{
+	.loginform-container{
 		grid-gap: 5rem;
 	}
 }
@@ -199,7 +198,7 @@ a:hover{
 }
 
 @media screen and (max-width: 900px){
-	.container{
+	.loginform-container{
 		grid-template-columns: 1fr;
 	}
 

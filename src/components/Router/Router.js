@@ -5,6 +5,11 @@ import Home from '../Home/Home';
 import Aboutus from '../About/AboutUs';
 import Login from "../Login/Login";
 import LoginForm from "../LoginForm/LoginForm";
+import UserNav from "./UserNav";
+import Profile from "../Beneficiary/Profile/ProfilePage";
+import Notifications from "../Beneficiary/Notifications/Notifications";
+import RationLocation from "../Beneficiary/Maps/RationLocation";
+/*The Error page is not well made yet. Please style it properly before making it live */
 
 class Navbar extends React.Component {
 
@@ -12,8 +17,18 @@ class Navbar extends React.Component {
         super();
         this.state = {
             makeNavTransparent: true,
-            loginType: ""
+            loginType: "",
+            isLoggedIn: false,
+            userData: null
         };
+
+        var temp = typeof (localStorage)
+        if (temp !== null) {
+            if (localStorage.getItem("userData") !== null) {
+                this.state.isLoggedIn = true;
+                this.state.userData = JSON.parse(localStorage.getItem("userData"));
+            }
+        }
     }
 
     componentDidMount() {
@@ -61,13 +76,22 @@ class Navbar extends React.Component {
         }
     }
 
-    onAboutUsClick = () => {
+    controlNavTransparency = () => {
         if (this.state.makeNavTransparent)
             this.setState({ makeNavTransparent: false });
     }
 
     onLoginClick = (loginType) => {
-        this.setState({loginType: loginType});
+        this.setState({ loginType: loginType });
+    }
+
+    onLogin = (userData) => {
+        console.log(userData);
+        this.setState({
+            isLoggedIn: true,
+            makeNavTransparent: true,
+            userData: userData
+        });
     }
 
     render() {
@@ -129,14 +153,21 @@ class Navbar extends React.Component {
                                         onClick={this.onNavClick}
                                     >Contact Us</NavLink>
 
-                                    <NavLink to="/login"
-                                        className=
-                                        {
-                                            !this.state.makeNavTransparent ?
-                                                "style-navlinks" : "style-navlinks-scroll"
-                                        }
-                                        onClick={this.onNavClick}
-                                    >Login</NavLink>
+                                    {
+                                        !this.state.isLoggedIn ?
+                                            <NavLink to="/login"
+                                                className=
+                                                {
+                                                    !this.state.makeNavTransparent ?
+                                                        "style-navlinks" : "style-navlinks-scroll"
+                                                }
+                                                onClick={this.onNavClick}
+                                            >Login</NavLink> :
+                                            <UserNav
+                                                makeNavTransparent={this.state.makeNavTransparent}
+                                                controlNavTransparency={this.controlNavTransparency}
+                                            />
+                                    }
                                 </div>
                             </div>
                             <div>
@@ -144,7 +175,7 @@ class Navbar extends React.Component {
                                     <Route path="/" exact>
                                         <Home
                                             state={this.state}
-                                            onAboutUsClick={this.onAboutUsClick}
+                                            controlNavTransparency={this.controlNavTransparency}
                                         />
                                     </Route>
                                     <Route path="/about-us">
@@ -154,13 +185,29 @@ class Navbar extends React.Component {
                                         <Homed item={"our-report"} />
                                     </Route>
                                     <Route path="/contact-us">
-                                        <Homed item={"contact-us"} />
+                                        <Homed />
                                     </Route>
                                     <Route path="/login">
                                         <Login onLoginClick={this.onLoginClick} />
                                     </Route>
                                     <Route path="/login-form">
-                                        <LoginForm loginType={this.state.loginType} />
+                                        <LoginForm loginType={this.state.loginType}
+                                            onLogin={this.onLogin} />
+                                    </Route>
+                                    <Route path="/profile">
+                                        <Profile isLoggedIn={this.state.isLoggedIn}
+                                            userdata={this.state.userData}
+                                        />
+                                    </Route>
+                                    <Route path="/notification">
+                                        <Notifications isLoggedIn={this.state.isLoggedIn}
+                                            userdata={this.state.userData}
+                                        />
+                                    </Route>
+                                    <Route path="/ration-location">
+                                        <RationLocation isLoggedIn={this.state.isLoggedIn}
+                                            userData={this.state.userData}
+                                        />
                                     </Route>
                                     <Route path="/*"><Homed /></Route>
                                 </Switch>

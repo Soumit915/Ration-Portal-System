@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rt-001",
+    "item": "rice",
+    "measuring_unit": "kg"
+  },
+  {
+    "id": "rt-002",
+    "item": "wheat",
+    "measuring_unit": "kg"
+  },
+  {
+    "id": "rt-003",
+    "item": "dal",
+    "measuring_unit": "kg"
+  },
+  {
+    "id": "rt-004",
+    "item": "kerosene",
+    "measuring_unit": "litre"
+  },
+  {
+    "id": "rt-005",
+    "item": "sugar",
+    "measuring_unit": "kg"
+  },
+  {
+    "id": "rt-006",
+    "item": "chicken-peas / chholla",
+    "measuring_unit": "kg"
+  }
+]

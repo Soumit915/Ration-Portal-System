@@ -1,0 +1,37 @@
+.style-navatar {
+  color: #007bff;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-navatar:hover {
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.style-navatar-scroll {
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.style-navatar-scroll:hover {
+  background-color: white;
+  color: rgba(5, 98, 197, 0.85);
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.navatar-div {
+  margin: 8px;
+}
+
+.style-drawer-width{
+  width: 250px;
+}
+
+.drawer-list-color{
+  color: #0333b6;
+}

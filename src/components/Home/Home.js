@@ -13,7 +13,7 @@ class Home extends React.Component {
 
     handleClick = () => {
         this.props.history.push("/about-us");
-        this.props.onAboutUsClick();
+        this.props.controlNavTransparency();
     }
 
     componentDidMount() {

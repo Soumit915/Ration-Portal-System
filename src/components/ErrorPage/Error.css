@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500");
+
+.main {
+  width: 100%;
+  height: 110vh;
+}
+
+.main {
+  color: rgba(5, 98, 197, 0.85);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container,
+.container > .row,
+.container > .row > div {
+  height: 100%;
+}
+
+#error-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text {
+  margin: 0 0 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+/*.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.btn.white {
+  border: 4px solid var(--white);
+  color: var(--white);
+}
+.btn.white:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--white);
+  z-index: -1;
+  transition: 0.2s ease;
+}
+.btn.white:hover {
+  color: var(--white);
+  background: var(--white);
+  transition: 0.2s ease;
+  color: black;
+}
+.btn.white:hover:before {
+  width: 100%;
+}
+*/

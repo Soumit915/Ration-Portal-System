@@ -1,0 +1,15 @@
+.body{
+    margin-top: 70px;
+}
+
+.sidebar{
+    height: 750px;
+    width: 450px;
+    float: left;
+    box-shadow: 1px 0px 10px 1px rgb(209, 208, 208);
+}
+
+.map{
+    height: 750px;
+    
+}

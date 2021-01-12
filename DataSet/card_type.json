@@ -1,0 +1,90 @@
+[
+  {
+    "card_type_id": "cti-A",
+    "items_listed": [
+      {
+        "item_id": "rt-001",
+        "quantity": 1
+      },
+      {
+        "item_id": "rt-003",
+        "quantity": 1
+      },
+      {
+        "item_id": "rt-005",
+        "quantity": 0.5
+      }
+    ]
+  },
+  {
+    "card_type_id": "cti-B",
+    "items_listed": [
+      {
+        "item_id": "rt-002",
+        "quantity": 2
+      },
+      {
+        "item_id": "rt-003",
+        "quantity": 2
+      },
+      {
+        "item_id": "rt-006",
+        "quantity": 0.5
+      }
+    ]
+  },
+  {
+    "card_type_id": "cti-C",
+    "items_listed": [
+      {
+        "item_id": "rt-001",
+        "quantity": 3
+      },
+      {
+        "item_id": "rt-002",
+        "quantity": 2
+      },
+      {
+        "item_id": "rt-003",
+        "quantity": 3
+      },
+      {
+        "item_id": "rt-005",
+        "quantity": 0.5
+      },
+      {
+        "item_id": "rt-006",
+        "quantity": 0.5
+      }
+    ]
+  },
+  {
+    "card_type_id": "cti-D",
+    "items_listed": [
+      {
+        "item_id": "rt-001",
+        "quantity": 5
+      },
+      {
+        "item_id": "rt-002",
+        "quantity": 3
+      },
+      {
+        "item_id": "rt-003",
+        "quantity": 5
+      },
+      {
+        "item_id": "rt-004",
+        "quantity": 1
+      },
+      {
+        "item_id": "rt-005",
+        "quantity": 0.5
+      },
+      {
+        "item_id": "rt-006",
+        "quantity": 1
+      }
+    ]
+  }
+]

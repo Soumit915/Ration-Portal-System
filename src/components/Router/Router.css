@@ -28,6 +28,7 @@
 
 .nav-options {
   padding: 0px 30px;
+  display: flex;
 }
 
 .style-navlinks {
